@@ -1,0 +1,107 @@
+body {
+    background-image:url('popcorn.jpg');
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    font-family: monospace;
+}
+.navi {
+    width: 85%;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: top    ;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.navi ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navi ul li a {
+    text-decoration: none;
+    color:#000000;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.navi ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navi ul li:hover::after {
+    width: 100%;
+}
+.welcome h1 {
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-size: 500%;
+    font-family: monospace;
+}
+.welcome p {
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-size: 150%;
+    font-family: monospace;
+}
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    top: 50%;
+    bottom: 50%;
+    -ms-transform: translate(250%, 250%);
+    transform: translate(200%, 200%);
+    justify-content: center;
+    border: 2px solid #000000;
+    background: transparent;
+    color: #ff0000e3;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span {
+    background: #000000;
+    height: 100%;
+    width: 0%;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span {
+    width: 100%;
+}
+button:hover {
+    border: none;
+}
+a:link {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+a:active {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
